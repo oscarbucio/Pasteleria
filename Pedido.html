@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-wirth, initial-scale=1.0">
+    <!--Titulo que se mostrará en la pestaña de la página-->
+    <title>Pedido</title>
+    <center> 
+        <aside class="responsive-banner">
+            <span class="circle-a"></span>
+            <span class="circle-b"></span>
+            <img src="https://github.com/oscarbucio/FrontEnd-practicas/blob/main/Logo%20pasteler%C3%ADa%20pastelera%20ilustrado%20rosa%20y%20violeta.png?raw=true" width="150" height="150"/>
+            <div class="container-envelope">
+                <p>Servicio de Pastelería Profesonal para toda ocasión</p>
+            </div>
+        </aside>
+</head>
+</center>
+<hr>
+
+<h2>Detalles del Pastel</h2>
+
+<body style="background-color:rgba(252, 249, 251, 0);">
+
+<form action="pedido.js">
+    <label for="Kilos">Kilogramos del Pastel</label>
+    <select name="Kilos" id="Kilos>
+        <option value=""></option>
+        <option value="5 Kg">5 Kg --- $500.00</option>
+        <option value="10 Kg">10 Kg --- $900.00</option>
+        <option value="20 Kg">20 Kg --- 1,600.00</option>
+    </select>
+    <p>El precio del pastel puede variar en base al modelo a trabajar.</p>
+
+<label for="Modelo">Cargue el Modelo de Pastel que requiere diseñar</label><br>
+<input type="file" name="Modelo" id="Modelo">
+
+<hr>
+<h2>Otros</h2>
+
+<label for="Velas">¿Velas?</label>
+<input type="checkbox" name="Velas" id="Velas">
+<label for="NumVelas">Número de Velas (entre 0 y 5)</label>
+<input type="range" name="NumVelas" id="NumVelas" min="0" max="5" value="0"><br>
+
+<label for="GelVaso">Gelatinas de Vaso ($30.00)</label>
+<input type="range" list="GelVaso" step="1" min="0" max="5" value="0">
+<datalist id="GelVaso">
+  <option value="0">
+  <option value="1">
+  <option value="2">
+  <option value="3">
+  <option value="4">
+  <option value="5">
+</datalist>
+<br>
+
+<label for="GelRed">Gelatinas Redondas ($500.00)</label>
+<input type="range" list="GelRed" step="1" min="0" max="5" value="0">
+<datalist id="GelRed">
+  <option value="0">
+  <option value="1">
+  <option value="2">
+  <option value="3">
+  <option value="4">
+  <option value="5">
+</datalist>
+
+<hr>
+
+<h2>Datos de Contacto</h2>
+
+
+    <label for="Nombre">A nombre de:</label>
+    <input type="text" id="Nombre" name="Nombre" placeholder="Tu Nombre">
+    
+    <label for="number">Número Teléfonico</label>   
+    <input type="number" name="Telefono" id="Telefono" placeholder="Núm. Telefónico"><br>
+
+    <label for="Fecha">Fecha de Entrega</label>
+    <input type="date" name="Fecha" id="Fecha">
+    
+    <label for="Hora">Hora de Entrega</label>
+    <input type="time" name="Hora" id="Hora"><br>
+    <label for="Sucursal">¿Entrega en Sucursal?</label><br>
+    <label for="Si">Si</label>
+    <input type="radio" name="Sucursal" id="Si"><br>
+    <label for="No">No</label>
+    <input type="radio" name="Sucursal" id="No">
+    <label for="Direccion">Dirección de Entrega</label>
+    <input type="text" name="Dirección de Entrega" id="Direccion" placeholder="Dirección de Entrega"><br><br>
+    <center>
+        <input type="reset" id="reset" value="Cancelar">
+        <a href="./Confirmación.html" class="more-link">
+            <input type="button" value="Comprar">
+        </a>
+    </center>
+</form>
+</body>
